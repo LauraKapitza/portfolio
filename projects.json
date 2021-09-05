@@ -1,0 +1,23 @@
+[
+    {
+        "name": "Sportsharing",
+        "type": "Website with interactive calendar to create and join sport events",
+        "technologies": "Javascript, ExpressJS, Axios, HTML, CSS",
+        "description": "",
+        "resource": ""
+    },
+    {
+        "name": "Cat vs. Cucumbers",
+        "type": "Web browser shoot'em game",
+        "technologies": "Javascript, HTML, CSS",
+        "description": "",
+        "resource": ""
+    },
+    {
+        "name": "Olympi",
+        "type": "Social media platform to share weighlifting videos and get feedback from the community",
+        "technologies": "Javascript, ExpressJS, React, Axios, HTML, CSS",
+        "description": "",
+        "resource": ""
+    }
+]

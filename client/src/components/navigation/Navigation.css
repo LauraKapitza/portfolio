@@ -1,5 +1,15 @@
 .Navigation {
     font-size: 18px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.Navigation h1 {
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 24px;
+    margin-top: 5px;
 }
 
 .Navigation a {
@@ -8,13 +18,17 @@
 }
 
 .Navigation .nav-links a {
+    /* background: black;
+    color: white; */
+    
     display: block;
+    font-weight: 400;
+    padding: 5px 20px;
     transition: color 0.3s linear;
-    padding: 0 20px;
 }
 
 .Navigation .nav-links a:hover {
-    border-radius: 0.8em 0.3em;
+    border-radius: 50px 10px;
     background: transparent;
     background-image: linear-gradient(
         to right,
@@ -24,37 +38,34 @@
   );
 }
 
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 600px) {
     .Navigation {
-        display: block;
         position: relative;
     }
     
     .Navigation .nav-links {
-        display: block;
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
         transition: transform 0.3s ease-in-out;
         z-index: 10;
         position: absolute;
-        right: 0;
+        right: 10px;
+        top: 35px;
         padding: 5px 10px 5px 5px;
     }
     
     .Navigation .icon {
         display: block;
+        font-size: 1.75em;
         position: absolute;
-        right: 0;
+        right: 10px;
         top: 0;
     }
     
 }
 
-@media screen and (min-width: 600px) {
-    .Navigation {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    
+@media screen and (min-width: 601px) {
     .Navigation .icon {
         display: none;
     }

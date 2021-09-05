@@ -1,3 +1,58 @@
 .Home {
     position: relative;
+    top: 50px;
+}
+
+.Home header {
+    text-align: center;
+}
+
+.Home header h2,
+.Home header p:first-child {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+
+.Home header h2 {
+    margin-bottom: 0;
+}
+
+.Home header p:first-child {
+    margin: 0;
+    padding: 5px 20px 5px;
+}
+
+.Home header .blue-container {
+    background-color: rgba(188, 210, 232, 0.7);
+    padding: 10px;
+    margin-top: -10px;
+}
+
+.Home header p:not(:first-child) {
+    font-weight: 200;
+    margin-bottom: 100px;
+    padding: 15px 20px 5px;
+}
+
+.Home main h3 {
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.Home main article {
+    display: flex;
+    align-items: center;
+}
+
+.Home main article > div {margin-left: 5px}
+
+
+@media screen and (min-width: 600px) {
+    .Home header h2,
+    .Home header p:first-child {
+    font-weight: 400;
+    font-size: 1.75em;
+    }  
 }
