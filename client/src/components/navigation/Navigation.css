@@ -28,14 +28,12 @@
 }
 
 .Navigation .nav-links a:hover {
-    border-radius: 50px 10px;
-    background: transparent;
-    background-image: linear-gradient(
-        to right,
-        rgba(188, 210, 232, 0.1),
-        rgba(188, 210, 232, 0.7) 4%,
-        rgba(188, 210, 232, 0.3)
-  );
+    border-bottom: 2px solid rgb(188, 210, 232);
+}
+
+.Navigation .nav-links a:active {
+    color: rgb(188, 210, 232);
+    border-bottom: 2px solid rgb(188, 210, 232);
 }
 
 @media screen and (max-width: 600px) {

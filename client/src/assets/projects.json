@@ -1,0 +1,32 @@
+[
+    {
+        "title": "Olympi",
+        "type": "Social media platform to share weighlifting videos and get feedback from the community",
+        "technologies": "Javascript, ExpressJS, React, Axios, HTML, CSS",
+        "description": "Olympi Olympi Olympi Olympi Olympi Olympi Olympi Olympi Olympi Olympi",
+        "resource": "https://olympi-app.herokuapp.com/",
+        "picture":"olympi.jpg",
+        "year": "2021",
+        "month": "09"
+    },
+    {
+        "title": "Sportsharing",
+        "type": "Website with interactive calendar to create and join sport events",
+        "technologies": "Javascript, ExpressJS, Axios, HTML, CSS",
+        "description": "Sportsharing Sportsharing Sportsharing Sportsharing Sportsharing Sportsharing Sportsharing Sportsharing",
+        "resource": "https://sportsharing.herokuapp.com/",
+        "picture":"sportsharing.jpg",
+        "year": "2021",
+        "month": "06"
+    },
+    {
+        "title": "Cat vs. Cucumbers",
+        "type": "Web browser shoot'em game",
+        "technologies": "Javascript, HTML, CSS",
+        "description": "Cat vs. Cucumbers Cat vs. Cucumbers Cat vs. Cucumbers Cat vs. Cucumbers Cat vs. Cucumbers Cat vs. Cucumbers Cat vs. Cucumbers",
+        "resource": "https://laurakapitza.github.io/Game-cat-against-cucumbers/",
+        "picture":"game-cac.jpg",
+        "year": "2021",
+        "month": "04"
+    }
+]
