@@ -1,32 +1,21 @@
-import Project from './Project/Project';
-import PROJECTS from '../../assets/projects.json';
+import { Link } from 'react-router-dom';
 import './Home.css';
 
 function Home() {
   return (
     <div className="Home">
-      <header>
-        <h2>Hi, I'm Laura!</h2>
-        <div>
-          <p>I am a Full Stack Web Developer based in Paris</p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel tempor libero, 
-            eu finibus lectus. Sed sed consectetur nisl. Ut placerat sagittis magna vel ultricies. 
-            Donec felis felis, egestas ut ligula et, gravida sagittis augue. Aenean id vestibulum magna. 
-          </p>
-        </div>
-      </header>
+      <div className='square brightblue'></div>
+      <div className='square darkblue square-front'>
+        <p>Hi 👋</p>
+        <p>I'm Laura</p>
+        <p>Junior Web Developer</p>
+      </div>
 
-      <main>
-        <h3>Recent Work</h3>
-
-        {PROJECTS.map((project, index) => (
-          <Project key={index} project={project} />
-        ))}
-
-        
-
-      </main>
+      <div id='introduction'>
+        <p>Check my <Link to='/work'>work</Link> to discover some of my projects.</p>
+        <p>Find more <Link to='/about'>about</Link> me and my motivation about programming.</p>
+        <p>You can <Link to='/contact'>contact</Link> me via a form or directly at mrslorbeer[at]gmail.com</p>
+      </div>
 
     </div>
   );

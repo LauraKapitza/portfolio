@@ -10,6 +10,10 @@ body {
   margin: 0 auto;
 }
 
+.flex {
+  display:flex;
+}
+
 @media screen and (min-width: 768px) {
   .App {
     width: 90%;

@@ -49,6 +49,32 @@
 
 .Home main article > div {margin-left: 5px}
 
+.square {
+    margin: 0 auto;
+    width: 250px; height: 250px;
+}
+
+.darkblue {
+    background-color:#00071F;
+}
+
+.square-front {
+    position: relative;
+    top: -230px;
+    left: -40px;
+}
+
+.brightblue {
+    background-color:#1F51FF;
+}
+
+.square.darkblue p {
+    color: white;
+}
+
+#introduction a {
+    display: inline-block;
+}
 
 @media screen and (min-width: 600px) {
     .Home header h2,
