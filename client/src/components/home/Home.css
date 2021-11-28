@@ -68,6 +68,17 @@
     text-decoration: none;
 }
 
+.intro-link:hover {
+    background-color: #1F51FF;
+    color: white;
+}
+
+.intro-link:active {
+    border-color: #00071F;
+    background-color: #00071F;
+    color: white;
+}
+
 @media screen and (max-width: 600px) {
     .intro {
         left: 5px;
