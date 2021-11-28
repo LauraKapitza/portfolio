@@ -15,19 +15,21 @@ function Navigation() {
           <i className="fa fa-bars"></i>
         </div> */}
 
-        <div className='flex menu-content-topleft'>
-          <Link to='/'>Home</Link>
-          <Link to='/work'>Work</Link>
+        <div className='flex navigation-menu-topleft'>
+          <Link className='navigation-link' to='/'>Home</Link>
+          <Link className='navigation-link' to='/work'>Work</Link>
         </div>
 
-        <div className='header-logo'>
-          <h1><Link to='/'>Laura Lorbeer</Link></h1>
+        <div className='branding'>
+          <h1 className='branding-title'>
+            <Link className='branding-link' to='/'>Laura Lorbeer</Link>
+          </h1>
           <div className='line darkblue'></div>
         </div>
 
-        <div className='flex menu-content-topright'>
-          <Link to='/about'>About</Link>
-          <Link to='/contact'>Contact</Link>
+        <div className='flex navigation-menu-topright'>
+          <Link className='navigation-link' to='/about'>About</Link>
+          <Link className='navigation-link' to='/contact'>Contact</Link>
         </div>
       
     </nav>

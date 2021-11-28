@@ -6,17 +6,17 @@
     margin-top: 30px;
 }
 
-h1 {
+.branding-title {
     font-weight: 200;
     font-size: 24px;
     margin-bottom: 30px;
 }
 
-h1 a {
+.branding-link {
     color: #1F51FF;
 }
   
-a {
+.Navigation a {
     color: #00071F;
     text-decoration: none;
 
@@ -26,14 +26,13 @@ a {
     transition: color 0.3s linear;
 }
   
-.menu-content-topleft a:hover,
-.menu-content-topright a:hover {
+.navigation-link:hover {
     color: #1F51FF;
 }
   
-a:active {
+.navigation-link:active {
     color: white;
-    background-color: #1F51FF;
+    background-color: #00071F
 }
 
 .line {
