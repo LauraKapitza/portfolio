@@ -15,7 +15,11 @@ function Navigation() {
           <i className="fa fa-bars"></i>
         </div> */}
 
-        <div className='flex navigation-menu-topleft'>
+        <div className='mobile-menu'>
+          <p className='menu-header'>Menu</p>
+        </div>
+
+        <div className='navigation-menu-topleft'>
           <Link className='navigation-link' to='/'>Home</Link>
           <Link className='navigation-link' to='/work'>Work</Link>
         </div>
@@ -27,7 +31,7 @@ function Navigation() {
           <div className='line darkblue'></div>
         </div>
 
-        <div className='flex navigation-menu-topright'>
+        <div className='navigation-menu-topright'>
           <Link className='navigation-link' to='/about'>About</Link>
           <Link className='navigation-link' to='/contact'>Contact</Link>
         </div>
