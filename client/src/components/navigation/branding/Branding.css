@@ -1,0 +1,30 @@
+.branding-title {
+    font-weight: 200;
+    font-size: 24px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.branding-link {
+    color: #1F51FF;
+    text-decoration: none;
+}
+
+.line {
+    background-color: #00071F;
+    margin: 0 auto;
+    height: 1px;
+    width: 200px;
+}
+
+@media screen and (max-width: 699px) {
+    .branding {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .branding-title {
+        margin-bottom: 30px;
+    }
+    
+}

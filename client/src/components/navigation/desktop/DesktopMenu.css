@@ -1,0 +1,46 @@
+.desktop-menu {
+    font-size: 18px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.desktop-content-topleft,
+.desktop-content-topright {
+    display: flex;
+}
+
+.desktop-link {
+    color: #00071F;
+    text-decoration: none;
+
+    display: block;
+    font-weight: 400;
+    padding: 5px 20px;
+    transition: color 0.3s linear;
+}
+  
+.desktop-link:hover {
+    color: #1F51FF;
+}
+  
+.desktop-link:active {
+    color: white;
+    background-color: #00071F
+}
+
+/* @media screen and (max-width: 699px) {
+    .desktop-menu {
+        position: relative;
+    }
+
+    .desktop-content-topleft {
+        display: none;
+    }
+
+    .desktop-content-topright {
+        display: none;
+    }
+    
+} */

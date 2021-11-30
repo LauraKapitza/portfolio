@@ -1,43 +1,37 @@
-import { Link } from 'react-router-dom';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import DesktopMenu from './desktop/DesktopMenu';
+import MobileMenu from './mobile/MobileMenu';
 import './Navigation.css';
 
 function Navigation() {
-  // const [display, setDisplay] = useState('none')
-
-  return (
-    <nav className="Navigation">
-
-        {/* <div className='icon' onClick = {() => {
-          if(display === 'block') setDisplay('none')
-          if(display === 'none') setDisplay('block')
-        }}>
-          <i className="fa fa-bars"></i>
-        </div> */}
-
-        <div className='mobile-menu'>
-          <p className='menu-header'>Menu</p>
-        </div>
-
-        <div className='navigation-menu-topleft'>
-          <Link className='navigation-link' to='/'>Home</Link>
-          <Link className='navigation-link' to='/work'>Work</Link>
-        </div>
-
-        <div className='branding'>
-          <h1 className='branding-title'>
-            <Link className='branding-link' to='/'>Laura Lorbeer</Link>
-          </h1>
-          <div className='line darkblue'></div>
-        </div>
-
-        <div className='navigation-menu-topright'>
-          <Link className='navigation-link' to='/about'>About</Link>
-          <Link className='navigation-link' to='/contact'>Contact</Link>
-        </div>
+  const [width, setWidth] = useState(window.innerWidth)
+  const [mobile, setMobile] = useState(null)
+  
+  useEffect(() => {
+    const handleResize = () => {
+      setWidth(window.innerWidth)
       
-    </nav>
-  );
+      if (width <= 699) {
+        setMobile(true)
+      } else {
+        setMobile(false)
+      }
+    }
+
+    window.addEventListener('resize', handleResize)
+
+    return () => {
+      window.removeEventListener('resize', handleResize)
+    }
+  })
+
+
+  return(
+    <header className="Navigation">
+      {mobile && <MobileMenu />}
+      {!mobile && <DesktopMenu />}
+    </header>
+  )
 }
 
 export default Navigation;
